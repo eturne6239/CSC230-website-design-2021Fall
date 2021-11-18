@@ -16,9 +16,9 @@ html {
   background-color: rgb(101, 101, 101);
 }
 
-a:link {
+/* a:link {
   text-decoration: none;
-}
+}--Remove */
 
 body {
   background-color: white;
@@ -34,14 +34,31 @@ img {
   display: block;
   width: 100%;
 }
+nav a {
+  text-decoration: none;
+}  /*added this one */
 
 /* Body Header Styles */
-body header {
-  background-color: rgb(191, 68, 70);
+body > header {
+  background-color: rgb(191, 168, 170);
   height: 40px;
 }
+body > header > nav > ul > li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  padding: 10px 0px;
+}
 
-nav.ul {
+body > header > nav a:visited, body > header > nav a:link {
+  color: rgb(51, 51, 51);
+  font-size: 0.9em;
+}
+
+body > header > nav a:hover, body > header > nav a:active {
+  color: rgb(255, 211, 211);
+}
+/*nav.ul {
   display: block;
   float: left;
   margin-right: 20px;
@@ -57,10 +74,31 @@ nav a:visited {
 nav a:hover,
 nav a:active {
   color: rgb(255, 211, 211);
-}
+}----replaced with the above */
 
 /* DIV Container Styles */
-div id.container {
+div#container {
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+div.cell a {
+  display: block;
+  width: 100%;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+/* Footer Styles */
+
+footer {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  text-align: right;
+  font-size: 2vmin;
+  color: rgb(143, 33, 36);
+/* div id.container {
   padding-right: 8px;
   padding-bottom: 8px;
 }
@@ -73,10 +111,10 @@ div.a[class^="cell"] {
 }
 
 /* Footer Styles */
-footer {
+/*footer {
   right: 8px;
   bottom: 8px;
   color: rgb(143, 33, 36);
   font-size: 2vmin;
-  text-align: right;
+  text-align: right;---replaced with the above  */
 }
